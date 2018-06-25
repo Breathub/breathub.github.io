@@ -11,7 +11,8 @@ before_script:
   - source /root/.bashrc 
   - apt-get install -y nodejs
   - npm install -g yarn
-  - npm run gulp
+  - yarn install 
+  - npm run build
 
 test:
   stage: test
