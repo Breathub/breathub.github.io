@@ -5,6 +5,11 @@ variables:
 
 before_script:
   - bundle install
+  - apt-get update -y
+  - apt-get install -y build-essential curl
+  - curl -sL https://deb.nodesource.com/setup_8.x | bash
+  - source /root/.bashrc 
+  - apt-get install node.
   - npm install
   - npm run gulp
 
