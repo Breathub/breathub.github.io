@@ -1,0 +1,31 @@
+image: ruby:2.3
+
+variables:
+  JEKYLL_ENV: production
+
+before_script:
+  - bundle install
+  - npm install
+  - npm run gulp
+
+test:
+  stage: test
+  script:
+  - bundle exec jekyll build -d test
+  artifacts:
+    paths:
+    - test
+  except:
+  - master
+
+pages:
+  stage: deploy
+  script:
+  - npm install
+  - npm run build
+  - bundle exec jekyll build -d public
+  artifacts:
+    paths:
+    - public
+  only:
+  - master
