@@ -25,6 +25,10 @@ services:
       header: Online Ödeme ve Rezervasyon
       content: Kampanyalar, ve Eşsiz Fiyatlar
 
+header:
+  description: "Her türlü outdoor aktivitesi ve lokasyonları hakkında kapsamlı bilgi edinin, Outdoor Aktivite Sağlayıcıları ile online ve güvenilir alışveriş yapın."
+  screenPath: "/img/breathub-demo-screen.png"
+
 #Google Ad Words Data from scripts code (using Google responsive options) and ad client
 data-ad-slot: 2973388149
 data-ad-client: ca-pub-9204963049240271
