@@ -1,10 +1,29 @@
 # Site settings
-title: Antonio Trento, theme Jeky New Age, the start Bootstrap themplate build for jekyll
+title: Breathub
 email:
-description: A jekyll template for landing pages, portfolio and blogging
+description: Breathub
 
 baseurl: "" # the subpath of your site, e.g. /blog/ (If you use organization leave empty)
-url: "https://jekynewage.github.io" # the base hostname & protocol for your site
+url: "http://breathub.github.io" # the base hostname & protocol for your site
+
+# Site Contents
+services:
+  header: "Outdoor Aktivitelerine dair Herşeyi Bulabilirsin"
+  subheader: "Yaşadığını hissetmeye hazır mısın?"
+  screenPath: "/img/breathub-demo-screen-services.png"
+  serviceList:
+    - icon: icon-map
+      header: Lokasyon
+      content: Outdoor aktivite yapılabilecek alanların ve rotaların, online ve offline datalar ile sunulması.
+    - icon: icon-basket-loaded
+      header: Outdoor Aktivite Sağlayıcıları
+      content: Outdoor aktivite sağlayıcıları, kursları ve mekanlarının bulunduğu bir pazaryeri.
+    - icon: icon-user
+      header: Kişiselleştirme
+      content: Kişisel ilgi alanlarına göre içerikler, kampanyalar, tavsiyeler, keşif araçları ve topluluklar.
+    - icon: icon-credit-card
+      header: Online Ödeme ve Rezervasyon
+      content: Kampanyalar, ve Eşsiz Fiyatlar
 
 #Google Ad Words Data from scripts code (using Google responsive options) and ad client
 data-ad-slot: 2973388149
