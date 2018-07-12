@@ -13,7 +13,7 @@ before_script:
   - npm install -g yarn
 
 develop:
-  stage: development
+  stage: test
   script:
   - yarn install 
   - npm run build
