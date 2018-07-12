@@ -20,7 +20,7 @@ develop:
   - bundle exec jekyll build -d public/$CI_COMMIT_REF_NAME
   artifacts:
     paths:
-    - $CI_COMMIT_REF_NAME
+    - public/$CI_COMMIT_REF_NAME
   except:
   - master
 
