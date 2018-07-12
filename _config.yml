@@ -7,6 +7,11 @@ baseurl: "" # the subpath of your site, e.g. /blog/ (If you use organization lea
 url: "http://breathub.github.io" # the base hostname & protocol for your site
 
 # Site Contents
+
+header:
+  description: "Her türlü outdoor aktivitesi ve lokasyonları hakkında kapsamlı bilgi edinin, Outdoor Aktivite Sağlayıcıları ile online ve güvenilir alışveriş yapın."
+  screenPath: "/img/breathub-demo-screen.png"
+
 services:
   header: "Outdoor Aktivitelerine dair Herşeyi Bulabilirsin"
   subheader: "Yaşadığını hissetmeye hazır mısın?"
@@ -24,10 +29,6 @@ services:
     - icon: icon-credit-card
       header: Online Ödeme ve Rezervasyon
       content: Kampanyalar, ve Eşsiz Fiyatlar
-
-header:
-  description: "Her türlü outdoor aktivitesi ve lokasyonları hakkında kapsamlı bilgi edinin, Outdoor Aktivite Sağlayıcıları ile online ve güvenilir alışveriş yapın."
-  screenPath: "/img/breathub-demo-screen.png"
 
 #Google Ad Words Data from scripts code (using Google responsive options) and ad client
 data-ad-slot: 2973388149
