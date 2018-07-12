@@ -4,8 +4,8 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <div class="section-heading">
-                        <h2>Unlimited Features, Unlimited Fun</h2>
-                        <p class="text-muted">Check out what you can do with this app theme!</p>
+                        <h2>{{ site.services.header }}</h2>
+                        <p class="text-muted">{{ site.services.subheader }}</p>
                         <hr>
                     </div>
                 </div>
@@ -17,7 +17,7 @@
                             <div class="device">
                                 <div class="screen">
                                     <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                                    <img src="/img/demo-screen-1.jpg" class="img-responsive" alt=""> </div>
+                                    <img src="{{ site.services.screenPath }}" class="img-responsive" alt=""> </div>
                                 <div class="button">
                                     <!-- You can hook the "home button" to some JavaScript events or just remove it -->
                                 </div>
@@ -27,44 +27,26 @@
                 </div>
                 <div class="col-md-8">
                     <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="feature-item">
-                                    <i class="icon-screen-smartphone text-primary"></i>
-                                    <h3>Device Mockups</h3>
-                                    <p class="text-muted">Ready to use HTML/CSS device mockups, no Photoshop required!</p>
+                        {% assign rows = site.services.serviceList.size | divided_by: 2.0 | ceil %}
+                        {% for i in (1..rows) %}
+                            {% assign offset = forloop.index0 | times: 2 %}
+                            <div class="row">
+                                {% for service in site.services.serviceList limit:2 offset:offset %}
+                                <div class="col-md-6">
+                                    <div class="feature-item">
+                                        <i class="{{ service.icon }} text-primary"></i>
+                                        <h3>{{ service.header }}</h3>
+                                        <p class="text-muted">{{ service.content }}</p>
+                                    </div>
                                 </div>
+                                {% endfor %}
                             </div>
-                            <div class="col-md-6">
-                                <div class="feature-item">
-                                    <i class="icon-camera text-primary"></i>
-                                    <h3>Flexible Use</h3>
-                                    <p class="text-muted">Put an image, video, animation, or anything else in the screen!</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="feature-item">
-                                    <i class="icon-present text-primary"></i>
-                                    <h3>Free to Use</h3>
-                                    <p class="text-muted">As always, this theme is free to download and use for any purpose!</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="feature-item">
-                                    <i class="icon-lock-open text-primary"></i>
-                                    <h3>Open Source</h3>
-                                    <p class="text-muted">Since this theme is MIT licensed, you can use it commercially!</p>
-                                </div>
-                            </div>
-                        </div>
+                        {% endfor %}
                     </div>
                 </div>
-                <div class="col-md-8">
+                <!-- <div class="col-md-8">
                   <h3>Hosts it in the best cloud hosting on the market</h3>
                   <a target="_blank" href="https://m.do.co/c/a29d90274371" style="color:black" class="btn btn-outline btn-xl">Digital Ocean</a>  
-                </div>
-
+                </div> -->
             </div>
     </section>

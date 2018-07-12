@@ -11,22 +11,24 @@ before_script:
   - source /root/.bashrc 
   - apt-get install -y nodejs
   - npm install -g yarn
-  - yarn install 
-  - npm run build
 
-test:
+develop:
   stage: test
   script:
-  - bundle exec jekyll build -d test
+  - yarn install 
+  - npm run build
+  - bundle exec jekyll build -d public/$CI_COMMIT_REF_NAME
   artifacts:
     paths:
-    - test
+    - public/$CI_COMMIT_REF_NAME
   except:
   - master
 
 pages:
   stage: deploy
   script:
+  - yarn install 
+  - npm run build
   - bundle exec jekyll build -d public
   artifacts:
     paths:
