@@ -1,31 +1,45 @@
 
 <section id="contact" class="contact bg-primary">
     <div class="container">
-        <h2>We <i class="fa fa-heart"></i> new friends!</h2>
-        <ul class="list-inline list-social">
+        <h2>{{ site.contact.header }}</h2>
+        <p>{{ site.contact.description}}</p>
+        <!-- <ul class="list-inline list-social">
             {% for network in site.social %}
             <li class="social-{{ network.title }}">
                 <a href="{{ network.url }}" class="btn-social btn-outline"><i class="fa fa-fw fa-{{ network.title }}"></i></a>
             </li>
-        {% endfor %}
-        </ul>
-        <!-- <ul class="list-inline list-social">
-            <li class="social-twitter">
-                <a href="#"><i class="fa fa-twitter"></i></a>
-            </li>
-            <li class="social-facebook">
-                <a href="#"><i class="fa fa-facebook"></i></a>
-            </li>
-            <li class="social-google-plus">
-                <a href="#"><i class="fa fa-google-plus"></i></a>
-            </li>
+            {% endfor %}
         </ul> -->
+        <div class="col-md-12">
+                <form action="https://formspree.io/{{ site.contact.FS.mail }}" method="POST">
+                    <div class="form-group">
+                        <!-- <label for="exampleInputEmail1">Email </label> -->
+                        <input type="text" name="name" class="form-control" placeholder="{{site.contact.FS.nameLabel}}">
+                    </div>
+                    <div class="form-group">
+                        <!-- <label for="exampleInputEmail1">Email </label> -->
+                        <input type="email" name="_replyto" class="form-control" placeholder="{{site.contact.FS.mailLabel}}">
+                    </div>
+                    <div class="form-group">
+                        <!-- <label for="exampleInputPassword1">Password</label> -->
+                        <textarea name="message" class="form-control" placeholder="{{site.contact.FS.messageLabel}}"></textarea>
+                    </div>
+        
+                    <button type="submit" class="btn btn-primary">{{site.contact.FS.submitLabel}}</button>
+        
+                    <!-- Hidden params -->
+                    <input type="hidden" name="_language" value="tr" />
+                    <input type="hidden" name="_subject" value="Dilek ve Şikayet" />
+                    <input type="text" name="_gotcha" style="display:none" />
+                </form>
+        </div>
+
     </div>
 </section>
 <footer>
     <div class="container">
-        <p>&copy; 2016 theme by <a rel="nofollow" target="blank" href="https://startbootstrap.com/template-overviews/new-age/">Start Bootstrap</a> Built with <a target="_blank" rel="nofollow" href="https://jekyllrb.com/">Jekyll</a> by <a target="_blank" rel="nofollow" href="https://it.linkedin.com/in/antoniotrento">Antonio Trento</a> hosted on <a target="_blank" rel="nofollow" href="https://github.com/jekynewage/jekynewage.github.io">Github</a>. All Rights Reserved.</p>
-        <ul class="list-inline">
+        <p>{{site.contact.footer.description}}</p>
+        <!-- <ul class="list-inline">
             <li>
                 <a href="#">Privacy</a>
             </li>
@@ -35,6 +49,6 @@
             <li>
                 <a href="#">FAQ</a>
             </li>
-        </ul>
+        </ul> -->
     </div>
 </footer>
