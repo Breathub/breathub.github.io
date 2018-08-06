@@ -1,6 +1,6 @@
 # Site settings
 title: Breathub
-email:
+email: info@breathub.com
 description: Breathub
 
 baseurl: "" # the subpath of your site, e.g. /blog/ (If you use organization leave empty)
@@ -9,10 +9,17 @@ url: "http://breathub.github.io" # the base hostname & protocol for your site
 # Site Contents
 
 header:
+  nav:
   description: "Her türlü outdoor aktivitesi ve lokasyonları hakkında kapsamlı bilgi edinin, Outdoor Aktivite Sağlayıcıları ile online ve güvenilir alışveriş yapın."
   screenPath: "/img/breathub-demo-screen.png"
 
+download:
+  nav:
+  header:
+  description:
+
 services:
+  nav:
   header: "Outdoor Aktivitelerine dair Herşeyi Bulabilirsin"
   subheader: "Yaşadığını hissetmeye hazır mısın?"
   screenPath: "/img/breathub-demo-screen-services.png"
@@ -30,10 +37,54 @@ services:
       header: Online Ödeme ve Rezervasyon
       content: Kampanyalar, ve Eşsiz Fiyatlar
 
+portfolio:
+  nav:
+  header: "İster huzurun, ister maceranın, ister adrenalinin tadını çıkar"
+  subheader: ""
+  portfolioList:
+    - title: Tüm bunlar hakkında bilgiler, online ödeme ve harita üzerinde lokasyon bilgisi 
+      category: Plajlar, Koylar ve Beach club'lar
+      imgPath:
+      link:
+
+feature:
+  nav:
+  header: İşletmenizi (breathub-logo) ile büyütün.
+  featureList:
+    - icon: fa-accusoft
+      header: İşletme Yönetim Paneli
+      description: Breathub işletme hedeflerinizi, nakit akışlarınızı, toplam müşteri sayılarınızı takip edebileceğiniz kullanışlı ve basit analiz araçları sunar. 
+    - icon: fa-child
+      header: Müşteri Yönetimi
+      description: Müşterilerinizin online rezervasyonlarını ve ödemelerini takip edip onlarla iletişime geçebilirsiniz.Müşterileriniz hakkında analiz raporları alıp kampanyalarınızı ve stratejilerinizi belirleyebilirsiniz.
+    - icon: fa-credit-card
+      header: Online Ödeme Alma
+      description: Çeşitli ödeme yöntemlerini kabul etmeye başlayın. Daimi ve günlük müşterilerinize kredi ve banka kartı ile ödeme imkanı sunun.
+    - icon: fa-adversal
+      header: Platform İçi Kampanyalar ve Reklamlar
+      description: breathub içerisinde yer alan potansiyel müşterilerinize özel kampanyalar ve reklamlar düzenleyin.
+
+aside:
+  nav:
+  header: breathub seninle, her yerde.
+  subheader: ""
+
+contact:
+  nav:
+  header: Bize Ulaşın!
+  description: Dilek ve şikayetlerinizi burada belirtebilirsiniz.
+  FS:
+    mail: info@breathub.com #Formspree'nin gonderdigi mail adresi.
+    nameLabel: Isim-Soyisim
+    mailLabel: Mail Adresiniz
+    messageLabel: Mesajiniz
+    submitLabel: Gönder
+
+
 #Google Ad Words Data from scripts code (using Google responsive options) and ad client
-data-ad-slot: 2973388149
-data-ad-client: ca-pub-9204963049240271
-google_ad_client: ca-pub-9204963049240271
+# data-ad-slot: 2973388149
+# data-ad-client: ca-pub-9204963049240271
+# google_ad_client: ca-pub-9204963049240271
 
 google_analytics: "UA-86331249-1"
 addthis_id: ra-5644da281510c62f
