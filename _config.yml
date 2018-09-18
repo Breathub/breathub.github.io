@@ -45,8 +45,28 @@ portfolio:
   portfolioList:
     - title: Tüm bunlar hakkında bilgiler, online ödeme ve harita üzerinde lokasyon bilgisi 
       category: Plajlar, Koylar ve Beach club'lar
-      imgPath:
-      link:
+      imgPath: /assets/img/portfolio/1.jpg
+      link: \#
+    - title: Deneyimler ve Yorumlar, Profesyonel içerikler tavsiyeler ve öneriler, Ekosistem bilgileri 
+      category: Kamp alanlari
+      imgPath: /assets/img/portfolio/2.jpg
+      link: \#
+    - title:  Rotalar, Tavsiyeler, Zorluk dereclerine göre sınıflandırma, Profesyonel İçerikler
+      category:  Dağcılık
+      imgPath: /assets/img/portfolio/3.jpg
+      link: \#
+    - title: Balık tutmaya elverişli noktalar, tiyolar, Profesyonel içerikler
+      category: Balıkçılık 
+      imgPath: /assets/img/portfolio/4.jpg
+      link: \#
+    - title: Dalış Merkezleri Karşılaştırma, Dalış merkezi hakkında her türlü bilgi, Online ödeme ve rezervasyon seçeneği
+      category: Tüplü Dalış
+      imgPath: /assets/img/portfolio/5.jpg
+      link: \#
+    - title: Yüzlerce Outdoor Aktivitesi seni bekliyor.
+      category: Ve daha niceleri...
+      imgPath: /assets/img/portfolio/6.png
+      link: \#
 
 feature:
   nav: featurenav

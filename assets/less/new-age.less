@@ -461,3 +461,24 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: @gray-darker;
 }
+
+.portfolio-flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    align-content: stretch;
+
+    .portfolio-flex-item{
+        flex-basis: auto;
+        flex-grow: 1;
+        flex-shrink: 1;
+        display: flex;
+        width: 33%;
+        min-width: 300px;
+        
+        .img-responsive{
+            flex-shrink: 1;
+            max-height: 300px;
+        }
+    }
+}

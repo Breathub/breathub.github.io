@@ -5,18 +5,6 @@
                 <h2 class="section-heading">{{ site.portfolio.header }}</h2>
                 <p>{{ site.portfolio.subheader }}</p>
                 <hr>
-                {% if site.data-ad-client %}
-                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                <!-- jekynewage -->
-                <ins class="adsbygoogle"
-                    style="display:block"
-                    data-ad-client="{{ site.data-ad-client }}"
-                    data-ad-slot="{{ site.data-ad-slot }}"
-                    data-ad-format="auto"></ins>
-                <script>
-                    (adsbygoogle = window.adsbygoogle || []).push({});
-                </script>
-                {% endif %}
             </div>
         </div>
     </div>
@@ -24,10 +12,10 @@
 
 <section class="no-padding" id="portfolio">
     <div class="container-fluid">
-        <div class="row no-gutter">
+        <div class="portfolio-flex-container">
             {% for pf in site.portfolio.portfolioList %}
-            <div class="col-lg-4 col-sm-6">
-                <a href="{{ pf.link }}" class="portfolio-box">
+            <!-- <div class="portfolio-flex-item"> -->
+                <a href="{{ pf.link }}" class="portfolio-box portfolio-flex-item">
                     <img src="{{ pf.imgPath }}" class="img-responsive" alt="">
                     <div class="portfolio-box-caption">
                         <div class="portfolio-box-caption-content">
@@ -40,7 +28,7 @@
                         </div>
                     </div>
                 </a>
-            </div>
+            <!-- </div> -->
             {% endfor %}
         </div>
     </div>
