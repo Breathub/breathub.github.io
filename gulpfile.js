@@ -18,10 +18,10 @@ var banner = ['/*!\n',
 
 // Compile LESS files from /less into /css
 gulp.task('less', function() {
-    return gulp.src('less/new-age.less')
+    return gulp.src('assets/less/new-age.less')
         .pipe(less())
         .pipe(header(banner, { pkg: pkg }))
-        .pipe(gulp.dest('css'))
+        .pipe(gulp.dest('assets/css'))
         .pipe(browserSync.reload({
             stream: true
         }))
@@ -29,10 +29,10 @@ gulp.task('less', function() {
 
 // Minify compiled CSS
 gulp.task('minify-css', ['less'], function() {
-    return gulp.src('css/new-age.css')
+    return gulp.src('assets/css/new-age.css')
         .pipe(cleanCSS({ compatibility: 'ie8' }))
         .pipe(rename({ suffix: '.min' }))
-        .pipe(gulp.dest('css'))
+        .pipe(gulp.dest('assets/css'))
         .pipe(browserSync.reload({
             stream: true
         }))
@@ -40,11 +40,11 @@ gulp.task('minify-css', ['less'], function() {
 
 // Minify JS
 gulp.task('minify-js', function() {
-    return gulp.src('js/new-age.js')
+    return gulp.src('assets/js/new-age.js')
         .pipe(uglify())
         .pipe(header(banner, { pkg: pkg }))
         .pipe(rename({ suffix: '.min' }))
-        .pipe(gulp.dest('js'))
+        .pipe(gulp.dest('assets/js'))
         .pipe(browserSync.reload({
             stream: true
         }))
@@ -53,13 +53,13 @@ gulp.task('minify-js', function() {
 // Copy vendor libraries from /node_modules into /vendor
 gulp.task('copy', function() {
     gulp.src(['node_modules/bootstrap/dist/**/*', '!**/npm.js', '!**/bootstrap-theme.*', '!**/*.map'])
-        .pipe(gulp.dest('vendor/bootstrap'))
+        .pipe(gulp.dest('assets/vendor/bootstrap'))
 
     gulp.src(['node_modules/jquery/dist/jquery.js', 'node_modules/jquery/dist/jquery.min.js'])
-        .pipe(gulp.dest('vendor/jquery'))
+        .pipe(gulp.dest('assets/vendor/jquery'))
 
     gulp.src(['node_modules/simple-line-icons/*/*'])
-        .pipe(gulp.dest('vendor/simple-line-icons'))
+        .pipe(gulp.dest('assets/vendor/simple-line-icons'))
         
     gulp.src('node_modules/font-awesome/fonts/*')
         .pipe(gulp.dest('fonts'))

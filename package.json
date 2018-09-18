@@ -1,8 +1,8 @@
 {
   "name": "breathub.gitlab.io",
   "title": "Breathub Official Website",
-  "version": "3.3.7",
-  "homepage": "http://breathub.gitlab.io",
+  "version": "0.2.1",
+  "homepage": "http://breathub.com",
   "author": "Breathub",
   "license": {
     "type": "MIT",
@@ -25,6 +25,7 @@
     "url": "https://github.com/BlackrockDigital/startbootstrap-new-age.git"
   },
   "dependencies": {
+    "animate.css": "^3.7.0",
     "simple-line-icons": "^2.3.2"
   },
   "scripts": {
