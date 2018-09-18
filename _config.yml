@@ -2,6 +2,7 @@
 title: Breathub
 email: info@breathub.com
 description: Breathub
+logo: "/assets/img/breathub_logo.png"
 
 baseurl: "" # the subpath of your site, e.g. /blog/ (If you use organization leave empty)
 url: "https://breathub.com" # the base hostname & protocol for your site
