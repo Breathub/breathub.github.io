@@ -3,4 +3,5 @@ node_modules/
 .sass-cache
 .jekyll-metadata
 public/
-assets/fonts
+# fonts are needed for github pages. 
+# assets/fonts 
