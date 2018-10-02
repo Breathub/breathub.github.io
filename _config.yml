@@ -2,7 +2,7 @@
 title: Breathub
 email: info@breathub.com
 description: Breathub
-logo: "/assets/img/breathub_logo.png"
+logo: "/assets/img/breathub/breathub-logo-trimmed.png"
 
 baseurl: "" # the subpath of your site, e.g. /blog/ (If you use organization leave empty)
 url: "https://breathub.com" # the base hostname & protocol for your site
@@ -12,7 +12,7 @@ url: "https://breathub.com" # the base hostname & protocol for your site
 header:
   nav: headernav
   description: "Her türlü outdoor aktivitesi ve lokasyonları hakkında kapsamlı bilgi edinin, Outdoor Aktivite Sağlayıcıları ile online ve güvenilir alışveriş yapın."
-  screenPath: "/assets/img/breathub-demo-screen.png"
+  screenPath: "/assets/img/breathub/breathub-demo-screen.png"
 
 download:
   nav: downloadnav
@@ -23,7 +23,7 @@ services:
   nav: servicesnav
   header: "Outdoor Aktivitelerine dair Herşeyi Bulabilirsin"
   subheader: "Yaşadığını hissetmeye hazır mısın?"
-  screenPath: "/assets/img/breathub-demo-screen-services.png"
+  screenPath: "/assets/img/breathub/breathub-demo-screen-services.png"
   serviceList:
     - icon: icon-map
       header: Lokasyon
