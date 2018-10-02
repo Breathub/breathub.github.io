@@ -1,8 +1,8 @@
 {
   "name": "breathub.gitlab.io",
   "title": "Breathub Official Website",
-  "version": "3.3.7",
-  "homepage": "http://breathub.gitlab.io",
+  "version": "0.2.1",
+  "homepage": "https://breathub.com",
   "author": "Breathub",
   "license": {
     "type": "MIT",
@@ -18,14 +18,13 @@
     "gulp-less": "^3.1.0",
     "gulp-rename": "^1.2.2",
     "gulp-uglify": "^1.5.4",
-    "jquery": "^1.11.3"
+    "jquery": "^1.11.3",
+    "animate.css": "^3.7.0",
+    "simple-line-icons": "^2.3.2"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/BlackrockDigital/startbootstrap-new-age.git"
-  },
-  "dependencies": {
-    "simple-line-icons": "^2.3.2"
   },
   "scripts": {
     "build": "gulp"

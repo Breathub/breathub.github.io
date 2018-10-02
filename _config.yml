@@ -2,27 +2,28 @@
 title: Breathub
 email: info@breathub.com
 description: Breathub
+logo: "/assets/img/breathub/breathub-logo-trimmed.png"
 
 baseurl: "" # the subpath of your site, e.g. /blog/ (If you use organization leave empty)
-url: "http://breathub.github.io" # the base hostname & protocol for your site
+url: "https://breathub.com" # the base hostname & protocol for your site
 
 # Site Contents
 
 header:
-  nav:
+  nav: headernav
   description: "Her türlü outdoor aktivitesi ve lokasyonları hakkında kapsamlı bilgi edinin, Outdoor Aktivite Sağlayıcıları ile online ve güvenilir alışveriş yapın."
-  screenPath: "/img/breathub-demo-screen.png"
+  screenPath: "/assets/img/breathub/breathub-demo-screen.png"
 
 download:
-  nav:
+  nav: downloadnav
   header:
   description:
 
 services:
-  nav:
+  nav: servicesnav
   header: "Outdoor Aktivitelerine dair Herşeyi Bulabilirsin"
   subheader: "Yaşadığını hissetmeye hazır mısın?"
-  screenPath: "/img/breathub-demo-screen-services.png"
+  screenPath: "/assets/img/breathub/breathub-demo-screen-services.png"
   serviceList:
     - icon: icon-map
       header: Lokasyon
@@ -38,18 +39,38 @@ services:
       content: Kampanyalar, ve Eşsiz Fiyatlar
 
 portfolio:
-  nav:
+  nav: portfolionav
   header: "İster huzurun, ister maceranın, ister adrenalinin tadını çıkar"
   subheader: ""
   portfolioList:
     - title: Tüm bunlar hakkında bilgiler, online ödeme ve harita üzerinde lokasyon bilgisi 
       category: Plajlar, Koylar ve Beach club'lar
-      imgPath:
-      link:
+      imgPath: /assets/img/portfolio/1.jpg
+      link: \#
+    - title: Deneyimler ve Yorumlar, Profesyonel içerikler tavsiyeler ve öneriler, Ekosistem bilgileri 
+      category: Kamp alanlari
+      imgPath: /assets/img/portfolio/2.jpg
+      link: \#
+    - title:  Rotalar, Tavsiyeler, Zorluk dereclerine göre sınıflandırma, Profesyonel İçerikler
+      category:  Dağcılık
+      imgPath: /assets/img/portfolio/3.jpg
+      link: \#
+    - title: Balık tutmaya elverişli noktalar, tiyolar, Profesyonel içerikler
+      category: Balıkçılık 
+      imgPath: /assets/img/portfolio/4.jpg
+      link: \#
+    - title: Dalış Merkezleri Karşılaştırma, Dalış merkezi hakkında her türlü bilgi, Online ödeme ve rezervasyon seçeneği
+      category: Tüplü Dalış
+      imgPath: /assets/img/portfolio/5.jpg
+      link: \#
+    - title: Yüzlerce Outdoor Aktivitesi seni bekliyor.
+      category: Ve daha niceleri...
+      imgPath: /assets/img/portfolio/6.png
+      link: \#
 
 feature:
-  nav:
-  header: İşletmenizi (breathub-logo) ile büyütün.
+  nav: featurenav
+  header: İşletmenizi <img class="logo-as-header" src="/assets/img/breathub/breathub-logo-trimmed.png"/> ile büyütün.
   featureList:
     - icon: fa-accusoft
       header: İşletme Yönetim Paneli
@@ -65,19 +86,19 @@ feature:
       description: breathub içerisinde yer alan potansiyel müşterilerinize özel kampanyalar ve reklamlar düzenleyin.
 
 aside:
-  nav:
+  nav: asidenav
   header: breathub seninle, her yerde.
   subheader: ""
 
 contact:
-  nav:
+  nav: contactnav
   header: Bize Ulaşın!
   description: Dilek ve şikayetlerinizi burada belirtebilirsiniz.
   FS:
     mail: info@breathub.com #Formspree'nin gonderdigi mail adresi.
-    nameLabel: Isim-Soyisim
+    nameLabel: İsim-Soyisim
     mailLabel: Mail Adresiniz
-    messageLabel: Mesajiniz
+    messageLabel: Mesajınız
     submitLabel: Gönder
 
 
@@ -106,7 +127,11 @@ markdown: kramdown
 highlighter: rouge
 permalink: pretty
 paginate: 5
-exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
-
-plugins: [jekyll-paginate, jekyll-feed]
+exclude: 
+  - less
+  - node_modules
+  - Gruntfile.js
+  - package.json
+  - README.md
+plugins: [jekyll-paginate, jekyll-feed, jekyll-seo-tag]
 # Build settings
