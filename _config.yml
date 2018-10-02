@@ -70,7 +70,7 @@ portfolio:
 
 feature:
   nav: featurenav
-  header: İşletmenizi (breathub-logo) ile büyütün.
+  header: İşletmenizi <img class="logo-as-header" src="/assets/img/breathub/breathub-logo-trimmed.png"/> ile büyütün.
   featureList:
     - icon: fa-accusoft
       header: İşletme Yönetim Paneli
@@ -96,9 +96,9 @@ contact:
   description: Dilek ve şikayetlerinizi burada belirtebilirsiniz.
   FS:
     mail: info@breathub.com #Formspree'nin gonderdigi mail adresi.
-    nameLabel: Isim-Soyisim
+    nameLabel: İsim-Soyisim
     mailLabel: Mail Adresiniz
-    messageLabel: Mesajiniz
+    messageLabel: Mesajınız
     submitLabel: Gönder
 
 

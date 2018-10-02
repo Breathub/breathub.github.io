@@ -2808,3 +2808,8 @@ body {
   max-height: 40px;
   margin-top: -10px;
 }
+.logo-as-header {
+  max-width: 240px;
+  max-height: 50px;
+  margin-top: -21px;
+}
