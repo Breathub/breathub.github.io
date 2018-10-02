@@ -62,7 +62,7 @@ gulp.task('copy', function() {
         .pipe(gulp.dest('assets/vendor/simple-line-icons'))
         
     gulp.src('node_modules/font-awesome/fonts/*')
-        .pipe(gulp.dest('fonts'))
+        .pipe(gulp.dest('assets/fonts'))
 })
 
 // Run everything
